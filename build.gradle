@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'me.champeau.gradle.jmh' version '0.2.0'
+}
+
+repositories {
+    jcenter()
+}
+
+project.sourceCompatibility = 1.7
+project.targetCompatibility = 1.7
+
+dependencies {
+    jmh 'ai.h2o:h2o-core:3.2.0.5'
+}
+
+jmh {
+    jmhVersion = '1.11.3'
+}
