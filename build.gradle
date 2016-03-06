@@ -19,4 +19,5 @@ jmh {
     resultFormat = 'TEXT'
     resultsFile = file("results/${System.getProperty('java.version')}.txt")
     exclude = 'ListGetBenchmarkJMH'
+    jvmArgs = '-Xms8g -Xmx8g'
 }
