@@ -11,15 +11,14 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @State(Scope.Benchmark)
 public class MapGet {
-    @Param({"GoodKey", "BAD_KEY"})
     private String key;
-
     private Map<String, Integer> treeMap;
     private Map<String, Integer> hashMap;
     private Map<String, Integer> ignoreCaseMap;
 
     @Setup
     public void setUp() {
+        key = "GoodKey";
         treeMap = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
         hashMap = new HashMap<>();
         ignoreCaseMap = new HashMap<>();
