@@ -18,4 +18,5 @@ jmh {
     jmhVersion = '1.11.3'
     resultFormat = 'TEXT'
     resultsFile = file("results/${System.getProperty('java.version')}.txt")
+    exclude = 'ListGetBenchmarkJMH'
 }

@@ -1,0 +1,12 @@
+Benchmark                                                              Mode  Cnt     Score   Error  Units
+c.v.map.LongKeyMap.get_ConcurrentHashMap                               avgt         11.795          ns/op
+c.v.map.LongKeyMap.get_NonBlockingHashMapLong                          avgt          7.672          ns/op
+c.v.map.MapGet.HashMap_toLowerCase                                     avgt         63.600          ns/op
+c.v.map.MapGet.IgnoreCaseMap                                           avgt         15.655          ns/op
+c.v.map.MapGet.TreeMap                                                 avgt        103.282          ns/op
+c.v.reflection.CreateNewInstance.conctructor_allocate                  avgt         27.079          ns/op
+c.v.reflection.CreateNewInstance.find_constructor_allocate             avgt        137.515          ns/op
+c.v.reflection.CreateNewInstance.load_class_find_constructor_allocate  avgt       1074.779          ns/op
+c.v.reflection.CreateNewInstance.new_allocate                          avgt         16.594          ns/op
+c.v.reflection.GetFields.getDeclaredFields                             avgt        120.565          ns/op
+c.v.reflection.GetFields.getDeclaredFields_cached                      avgt          9.292          ns/op
