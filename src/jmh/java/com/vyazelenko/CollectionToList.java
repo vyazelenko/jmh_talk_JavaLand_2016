@@ -17,7 +17,7 @@ public class CollectionToList {
 
     @Setup
     public void setUp() throws Exception {
-        data = (Collection<Object>) Class.forName("java.util."collection).newInstance();
+        data = (Collection<Object>) Class.forName("java.util." + collection).newInstance();
         for (int i = 0; i < 10_000; i++) {
             data.add(new Object());
         }
