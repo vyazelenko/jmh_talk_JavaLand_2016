@@ -1,3 +1,18 @@
-Benchmark                     Mode  Cnt  Score   Error  Units
-ListGetBenchmarkJMH.baseline  avgt  200  0.282 ± 0.003  ns/op
-ListGetBenchmarkJMH.get       avgt  200  3.985 ± 0.024  ns/op
+Benchmark                                                          (collection)  Mode  Cnt    Score    Error  Units
+CollectionToList.new_ArrayList_add                                    ArrayList  avgt  200   55.164 ±  0.678  us/op
+CollectionToList.new_ArrayList_add                                      HashSet  avgt  200  117.425 ±  0.417  us/op
+CollectionToList.new_ArrayList_addAll                                 ArrayList  avgt  200    8.386 ±  0.030  us/op
+CollectionToList.new_ArrayList_addAll                                   HashSet  avgt  200  101.570 ±  1.651  us/op
+CollectionToList.new_ArrayList_from_Collection                        ArrayList  avgt  200    4.159 ±  0.019  us/op
+CollectionToList.new_ArrayList_from_Collection                          HashSet  avgt  200  100.884 ±  0.667  us/op
+map.LongKeyMap.get_ConcurrentHashMap                                        N/A  avgt  200    7.464 ±  0.037  ns/op
+map.LongKeyMap.get_NonBlockingHashMapLong                                   N/A  avgt  200    5.896 ±  0.007  ns/op
+map.MapGet.HashMap_toLowerCase                                              N/A  avgt  200   58.809 ±  0.118  ns/op
+map.MapGet.IgnoreCaseMap                                                    N/A  avgt  200   12.556 ±  0.027  ns/op
+map.MapGet.TreeMap                                                          N/A  avgt  200   79.836 ±  0.372  ns/op
+reflection.CreateNewInstance.conctructor_allocate                           N/A  avgt  200   19.328 ±  0.087  ns/op
+reflection.CreateNewInstance.find_constructor_allocate                      N/A  avgt  200   86.418 ±  0.360  ns/op
+reflection.CreateNewInstance.load_class_find_constructor_allocate           N/A  avgt  200  783.205 ± 28.265  ns/op
+reflection.CreateNewInstance.new_allocate                                   N/A  avgt  200   13.131 ±  0.040  ns/op
+reflection.GetFields.getDeclaredFields                                      N/A  avgt  200   60.627 ±  0.239  ns/op
+reflection.GetFields.getDeclaredFields_cached                               N/A  avgt  200    6.990 ±  0.008  ns/op

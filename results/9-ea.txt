@@ -1,12 +1,18 @@
-Benchmark                                                              Mode  Cnt     Score   Error  Units
-c.v.map.LongKeyMap.get_ConcurrentHashMap                               avgt         11.795          ns/op
-c.v.map.LongKeyMap.get_NonBlockingHashMapLong                          avgt          7.672          ns/op
-c.v.map.MapGet.HashMap_toLowerCase                                     avgt         63.600          ns/op
-c.v.map.MapGet.IgnoreCaseMap                                           avgt         15.655          ns/op
-c.v.map.MapGet.TreeMap                                                 avgt        103.282          ns/op
-c.v.reflection.CreateNewInstance.conctructor_allocate                  avgt         27.079          ns/op
-c.v.reflection.CreateNewInstance.find_constructor_allocate             avgt        137.515          ns/op
-c.v.reflection.CreateNewInstance.load_class_find_constructor_allocate  avgt       1074.779          ns/op
-c.v.reflection.CreateNewInstance.new_allocate                          avgt         16.594          ns/op
-c.v.reflection.GetFields.getDeclaredFields                             avgt        120.565          ns/op
-c.v.reflection.GetFields.getDeclaredFields_cached                      avgt          9.292          ns/op
+Benchmark                                                          (collection)  Mode  Cnt    Score    Error  Units
+CollectionToList.new_ArrayList_add                                    ArrayList  avgt  200   78.195 ±  0.548  us/op
+CollectionToList.new_ArrayList_add                                      HashSet  avgt  200  197.154 ±  0.989  us/op
+CollectionToList.new_ArrayList_addAll                                 ArrayList  avgt  200    8.287 ±  0.014  us/op
+CollectionToList.new_ArrayList_addAll                                   HashSet  avgt  200  174.148 ±  0.989  us/op
+CollectionToList.new_ArrayList_from_Collection                        ArrayList  avgt  200    4.143 ±  0.006  us/op
+CollectionToList.new_ArrayList_from_Collection                          HashSet  avgt  200  168.948 ±  0.699  us/op
+map.LongKeyMap.get_ConcurrentHashMap                                        N/A  avgt  200    8.004 ±  0.050  ns/op
+map.LongKeyMap.get_NonBlockingHashMapLong                                   N/A  avgt  200    6.370 ±  0.008  ns/op
+map.MapGet.HashMap_toLowerCase                                              N/A  avgt  200   48.846 ±  0.523  ns/op
+map.MapGet.IgnoreCaseMap                                                    N/A  avgt  200   12.299 ±  0.045  ns/op
+map.MapGet.TreeMap                                                          N/A  avgt  200   73.915 ±  0.350  ns/op
+reflection.CreateNewInstance.conctructor_allocate                           N/A  avgt  200   20.996 ±  0.118  ns/op
+reflection.CreateNewInstance.find_constructor_allocate                      N/A  avgt  200  104.467 ±  1.213  ns/op
+reflection.CreateNewInstance.load_class_find_constructor_allocate           N/A  avgt  200  808.638 ± 10.804  ns/op
+reflection.CreateNewInstance.new_allocate                                   N/A  avgt  200   12.719 ±  0.036  ns/op
+reflection.GetFields.getDeclaredFields                                      N/A  avgt  200   62.320 ±  0.213  ns/op
+reflection.GetFields.getDeclaredFields_cached                               N/A  avgt  200    7.206 ±  0.039  ns/op
